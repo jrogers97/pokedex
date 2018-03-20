@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: 'Quicksand';
+	font-weight: normal;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.displayNone {
+	display: none;
+}
+
+.header, .sub-header {
+	color: white;
+	text-align: center;
+	/*margin: 10px 0;*/
+}
+
+.header {
+	font-size: 55px;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.sub-header {
+	font-size: 35px;
+	margin-bottom: 3%;
+}
+
+.search-area {
+	margin: 0 auto;
+	/*margin-top: 10%;*/
+
+}
+
+input {
+	width: 40%;	
+	font-size: 20px;
+	padding: 6px 2px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	outline: none;
+}
+
+
+.list {
+	text-align: center;
+	margin: 10px auto;
+	border: 1px solid white;
+	height: 294px;
+	width: 40%;
+	overflow: auto;
+}
+
+.list li {
+	border: 1px solid white;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.list li:hover {
+	background-color: rgba(125,125,125,0.5)
+}
+
+.poke-info-modal {
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.poke-info {
+  background-color:#f4f4f4;
+  margin: 8% auto;
+  width:50%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.poke-info h1, a {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.poke-info a {
+	padding-bottom: 25px;
+}
+
+.poke-info-stats  {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.poke-info-stats span {
+	font-weight: bolder;
+}
+
+.poke-info img {
+	display: block;
+	margin: 0 auto;
+	height: 160px;
+}
+
+.learn-more {
+	display: block;
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+
+.learn-more:hover {
+	cursor: pointer;
+	color: grey;
+}
+
+.close-button {
+  float: right;
+  font-size:30px;
+  color: #bbb;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.close-button:hover, .close-button:focus {
+	cursor: pointer;
+	color:#000;
+  	text-decoration: none;
+}
+
+
+@keyframes modalopen{
+  from{ opacity: 0}
+  to {opacity: 1}
+}
